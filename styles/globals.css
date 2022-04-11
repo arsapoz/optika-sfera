@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {  
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family:  Inter var,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-weight: normal;
+  /* font-size: 14px; */
+  line-height: 24px;
+  color: #42464e;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.h-400 {
+  height: 400px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+}
