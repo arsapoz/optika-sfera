@@ -1,13 +1,12 @@
 import Link from 'next/link';
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react';
+import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
 const navigation = [
     { name: 'Početna', href: '/' },
     { name: 'Proizvodi', href: '#' },
-    { name: 'O nama', href: '/about-us' },
-    { name: 'Kontakt', href: 'kontakt' },
+    { name: 'O nama', href: '/o-nama' },
+    { name: 'Kontakt', href: '/kontakt' },
 ]
 
 function classNames(...classes) {
@@ -49,9 +48,8 @@ const MainNavigation = () => {
                                 <div className="hidden sm:block sm:ml-6">
                                     <div className="flex space-x-4">
                                         {navigation.map((item) => (
-                                            <Link href={item.href}>
+                                            <Link href={item.href} key={item.name}>
                                                 <a
-                                                    key={item.name}
                                                     className={classNames(
                                                         item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                                                         'px-3 py-2 rounded-md text-base font-medium'

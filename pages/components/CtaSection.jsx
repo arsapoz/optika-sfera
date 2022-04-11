@@ -1,6 +1,6 @@
-import { ExternalLinkIcon } from '@heroicons/react/solid'
+import Link from 'next/link';
 
-export default function Example() {
+export default function CtaSection() {
     return (
         <div className="relative bg-gray-800">
             <div className="h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
@@ -19,13 +19,14 @@ export default function Example() {
                     </p>
                     <div className="mt-8">
                         <div className="inline-flex rounded-md shadow">
+                        <Link href="/kontakt">
                             <a
-                                href="#"
-                                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium uppercase rounded-md text-gray-900 bg-white hover:bg-gray-50"
+                                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
                             >
-                                Kontakt
+                                Kontaktiraj nas
                                
                             </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

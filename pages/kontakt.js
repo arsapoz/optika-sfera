@@ -7,18 +7,22 @@ const features = [
     {
         name: 'Bežanijska 45, 11080 Zemun, Beograd, Srbija',
         icon: HomeIcon,
+        key: 'location'
     },
     {
         name: 'optikasfera@hotmail.com',
         icon: MailIcon,
+        key: 'mail'
     },
     {
         name: '+381 11 375 06 28',
         icon: PhoneIcon,
+        key: 'phone'
     },
     {
         name: '+381 11 375 06 28',
         icon: PrinterIcon,
+        key: 'faks'
     },
 ]
 const Kontakt = () => {
@@ -57,14 +61,14 @@ const Kontakt = () => {
                     <div className="lg:text-center">
                         <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Kako do nas?</h2>
                         <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                            Pronadjite nas  
+                            Pronadjite nas
                         </p>
                     </div>
 
                     <div className="mt-14">
                         <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-4 md:gap-x-8 md:gap-y-10">
                             {features.map((feature) => (
-                                <div key={feature.name} className="relative">
+                                <div key={feature.key} className="relative">
                                     <dt className='flex items-center '>
                                         <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
                                             <feature.icon className="h-6 w-6" aria-hidden="true" />

@@ -3,6 +3,7 @@ import diopticglasses from '../../public/assets/diopticglasses.jpg';
 import sunglasses from '../../public/assets/sunglasses.jpg';
 import lenses from '../../public/assets/lenses.jpg';
 import dodatno from '../../public/assets/dodatno.jpg';
+import Link from 'next/link';
 
 const callouts = [
   {
@@ -59,10 +60,12 @@ export default function Category() {
                   />
                 </div>
                 <h3 className="mt-6 text-base font-semibold text-gray-900">
-                  <a href={callout.href}>
+                  <Link href={callout.href}>
+                  <a>
                     <span className="absolute inset-0" />
                     {callout.name}
                   </a>
+                  </Link>
                 </h3>
                 <p className="text-sm text-gray-500">{callout.description}</p>
               </div>
