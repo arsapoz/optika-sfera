@@ -17,6 +17,8 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@iconify/icons-logos": "^1.2.5",
+    "@iconify/react": "^3.2.1",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "autoprefixer": "^10.4.4",
     "eslint": "8.11.0",
