@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import { Icon } from '@iconify/react';
-import tailwindcssIcon from '@iconify/icons-logos/tailwindcss';
 import cover from '../public/assets/cover3.jpg';
 import Service from './components/Service';
 import Category from './components/Category';

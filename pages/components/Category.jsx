@@ -52,11 +52,12 @@ export default function Category() {
           <div className="mt-16 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-4 lg:gap-x-6">
             {callouts.map((callout) => (
               <div key={callout.name} className="group relative">
-                <div className="relative h-80 w-full bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+                <div className="relative w-full h-64 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
                   <Image
                     src={callout.imageSrc}
                     alt={callout.imageAlt}
-                    className="w-full h-full object-center object-cover"
+                    layout="fill"
+                    className="w-full h-full object-center object-cover "
                   />
                 </div>
                 <h3 className="mt-6 text-base font-semibold text-gray-900">
