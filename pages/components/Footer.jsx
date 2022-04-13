@@ -131,7 +131,7 @@ export default function Footer() {
             </div>
             <div className="text-center p-6 bg-gray-800 border-t border-gray-300 text-base font-medium">
                 <span>© 2021 Copyright:</span>
-                <a className="text-gray-300 font-semibold" href="https://tailwind-elements.com/">Tailwind Elements</a>
+                <a className="text-gray-300 font-semibold" href="https://tailwind-elements.com/">Julijana Mandic</a>
             </div>
         </footer>
     )

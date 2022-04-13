@@ -41,6 +41,7 @@ export default function Home() {
             className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
             alt=""
             placeholder="blur"
+            priority="true"
           />
         </div>
       </div>

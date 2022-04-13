@@ -42,6 +42,7 @@ const AboutUs = () => {
                             className="w-full rounded-lg shadow-lg"
                             alt=""
                             placeholder="blur"
+                            priority="true"
                         />
                     </div>
                 </div>
