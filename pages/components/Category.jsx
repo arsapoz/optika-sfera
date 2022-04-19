@@ -8,30 +8,30 @@ import Link from 'next/link';
 const callouts = [
   {
     name: 'Dioptrijski okviri',
-    description: 'Najrazličitiji modeli naočara vaših omiljenih brendova',
+    description: 'Najrazličitiji modeli dioptrijskih naočara vaših omiljenih brendova',
     imageSrc: diopticglasses,
-    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+    imageAlt: 'Najrazličitiji modeli dioptrijskih naočara vaših omiljenih brendova',
     href: '#',
   },
   {
     name: 'Sunčane naočare',
-    description: 'Journals and note-taking',
+    description: 'Najrazličitiji modeli sunčanih naočara vaših omiljenih brendova',
     imageSrc: sunglasses,
-    imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
+    imageAlt: 'Najrazličitiji modeli sunčanih naočara vaših omiljenih brendova',
     href: '#',
   },
   {
     name: 'Sočiva',
-    description: 'Daily commute essentials',
+    description: 'Najkvalitetnija sočiva vaših omiljenih brendova',
     imageSrc: lenses,
-    imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
+    imageAlt: 'Najkvalitetnija sočiva vaših omiljenih brendova',
     href: '#',
   },
   {
     name: 'Dodatno',
-    description: 'Daily commute essentials',
+    description: 'Sve za održavanje vaših naočara i sočiva',
     imageSrc: dodatno,
-    imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
+    imageAlt: 'Sve za održavanje vaših naočara i sočiva',
     href: '#',
   },
 ]
@@ -57,6 +57,7 @@ export default function Category() {
                     src={callout.imageSrc}
                     alt={callout.imageAlt}
                     layout="fill"
+                    priority="true"
                     className="w-full h-full object-center object-cover "
                   />
                 </div>

@@ -7,7 +7,7 @@ export default function CtaSection() {
                 <img
                     className="w-full h-full object-cover"
                     src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply"
-                    alt=""
+                    alt="Pružanje najkvalitetnije usluge kod problema vezanih za vid"
                 />
             </div>
             <div className="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">

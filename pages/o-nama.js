@@ -1,5 +1,6 @@
 import React from "react";
 import Image from 'next/image';
+import Head from "next/head";
 import { UsersIcon, CalendarIcon, BellIcon } from '@heroicons/react/outline'
 import aboutUs from '../public/assets/aboutUs.jpg';
 import CtaSection from './components/CtaSection';
@@ -28,6 +29,13 @@ const features = [
 const AboutUs = () => {
     return (
         <div>
+            <Head>
+                <title>O nama - optika Sfera</title>
+                <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+                <meta name="description" content="Optika Sfera je savremena, moderna optičarska radnje sa dugogodišnjim iskustvom. Posle besplatne provere dioptrije, čeka vas bogat asortiman stakala, ramova, svih vrsta kontaktnih sočiva i sredstava za njihovo održavanje, različitih stranih i domaćih proizvođača, vrhunskog kvaliteta i izrade."></meta>
+                <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+                <meta property="og:title" content="O optici Sfera"></meta>
+            </Head>
             <div className="2xl:container 2xl:mx-auto lg:py-20 lg:px-40 md:py-12 md:px-6 py-9 px-4">
                 <div className="flex lg:flex-row flex-col lg:gap-8 sm:gap-10 gap-12">
                     <div className="w-full lg:w-6/12">
@@ -40,14 +48,14 @@ const AboutUs = () => {
                         <Image
                             src={aboutUs}
                             className="w-full rounded-lg shadow-lg"
-                            alt=""
+                            alt="Izradjujemo stakla i vrsimo servisiranje naočara u najkraćem mogućem roku.Naš tim ljudi sa puno iskustva garantuje pružanje najkvalitetnije usluge"
                             placeholder="blur"
                             priority="true"
                         />
                     </div>
                 </div>
             </div>
-            <CtaSection/>
+            <CtaSection />
             <div className="py-20 bg-gray-100">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="lg:text-center">

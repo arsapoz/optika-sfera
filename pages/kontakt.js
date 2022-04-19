@@ -1,5 +1,6 @@
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 import React, { useRef, useEffect, useState } from 'react';
+import Head from 'next/head';
 import { PhoneIcon, HomeIcon, MailIcon, PrinterIcon } from '@heroicons/react/outline'
 mapboxgl.accessToken = 'pk.eyJ1IjoianVsaWphbmFtYW5kaWMxMjMiLCJhIjoiY2wxcDE0ZG9mMHFiMDNlcGRuZmdvYmN0MSJ9.XAaTtpVqO0kGhV_Fb4gahw';
 
@@ -54,7 +55,13 @@ const Kontakt = () => {
 
     return (
         <div>
-
+            <Head>
+                <title>Kontakt - optika Sfera</title>
+                <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+                <meta name="description" content="Kontakt - pronadjite nas"></meta>
+                <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+                <meta property="og:title" content="Kontakt i lokacija - optika Sfera"></meta>
+            </Head>
             <div ref={mapContainer} className="h-400" />
             <div className="py-20 bg-gray-100">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
