@@ -4,9 +4,11 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <Html lang="sr">
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </Html>
   )
 }
 

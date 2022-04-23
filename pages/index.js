@@ -13,7 +13,7 @@ export default function Home() {
       <Head>
         <title>Početna - optika Sfera</title>
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="description" content="Sa ponudom od preko 30 renomiranih brendova, svojim klijentima nudimo najveći izbor stakala, ramova, svih vrsta kontaktnih sočiva i sredstava za njehove održavanje, vrhunskog kvaliteta. Posetite nas i uverite se u kvalitet naše usluge."></meta>
+        <meta name="description" content="Najbolja ponuda dioptrijskih, sunčanih naočara i sočiva najpopularnijih brendova"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         <meta property="og:title" content="Ponuda dioptrijskih, sunčanih naočara i sočiva"></meta>
       </Head>
