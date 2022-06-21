@@ -31,9 +31,7 @@ export default function Service() {
         <div className="lg:py-12 bg-white lg:mt-10 mt-10">
             <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
                 <div className="text-center ">
-                    <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                        Usluge
-                    </p>
+                <h1 className="lg:text-5xl md:text-4xl text-2xl font-bold leading-10 text-gray-800">Usluge</h1>
                     <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
                         Našim klijentima nudimo najkvalitetnije usluge
                     </p>

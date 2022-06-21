@@ -6,7 +6,9 @@ import galery2 from '../public/assets/galery2.jpg';
 import galery3 from '../public/assets/galery3.jpg';
 import galery4 from '../public/assets/galery4.jpg';
 import galery5 from '../public/assets/galery5.jpg';
+import galery7 from '../public/assets/galery7.jpg';
 import galery6 from '../public/assets/cover.jpg';
+import galery8 from '../public/assets/aboutUs.jpg';
 
 const galerija = [
     {
@@ -39,6 +41,16 @@ const galerija = [
         imageAlt: 'opika sfera - enterijer',
         id: 6
     },
+    {
+      imageSrc: galery7,
+      imageAlt: 'opika sfera - eksterijer',
+      id: 7
+  },
+  {
+    imageSrc: galery8,
+    imageAlt: 'opika sfera - eksterijer',
+    id: 8
+},
 ]
 
 export default function Galery() {
