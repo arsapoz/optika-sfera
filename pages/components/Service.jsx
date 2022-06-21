@@ -15,7 +15,7 @@ const features = [
     {
         name: 'Servis naočara',
         description:
-            'Ukoliko Vam je ispao šrafić, papučica ili ste seli na svoje naočare naš optičar će Vam rado pomoći. Vršimo servise svih vrsta naočara.',
+            'Ukoliko Vam je ispao šrafić, papučica ili ste seli na svoje naočare naš optičar će Vam rado pomoći. Vršimo servise svih vrsta naočara kupljenih u našoj radnji.',
         icon: ScaleIcon,
     },
     {

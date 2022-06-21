@@ -2,9 +2,9 @@ import Link from 'next/link';
 
 const navigation = [
     { name: 'Početna', href: '/' },
-    { name: 'Proizvodi', href: '/proizvodi'},
     { name: 'O nama', href: '/o-nama' },
     { name: 'Kontakt', href: '/kontakt' },
+    { name: 'Galerija', href: '/galerija'},
 ]
 
 export default function Footer() {
