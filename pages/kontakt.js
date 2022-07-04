@@ -16,7 +16,8 @@ const features = [
         key: 'mail'
     },
     {
-        name: '+381 11 375 06 28',
+        name: '+381 11 375 06 28, 063 222 834, 062 772 080',
+
         icon: PhoneIcon,
         key: 'phone'
     },
@@ -64,7 +65,7 @@ const Kontakt = () => {
             </Head>
             <div ref={mapContainer} className="h-400" />
             <div className="py-20 bg-gray-100">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="container relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:flex lg:flex-col lg:items-center">
                     <div className="lg:text-center">
                         <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Kako do nas?</h2>
                         <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -73,14 +74,17 @@ const Kontakt = () => {
                     </div>
 
                     <div className="mt-14">
-                        <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-4 md:gap-x-8 md:gap-y-10">
+                        <dl className="space-y-20 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-60 md:gap-y-20">
                             {features.map((feature) => (
                                 <div key={feature.key} className="relative">
                                     <dt className='flex items-center '>
-                                        <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                                            <feature.icon className="h-6 w-6" aria-hidden="true" />
+                                        <div className='flex flex-col justify-center'>
+                                            <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                                <feature.icon className="h-6 w-6" aria-hidden="true" />
+                                            </div>
+
+                                            <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{feature.name}</p>
                                         </div>
-                                        <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{feature.name}</p>
                                     </dt>
                                 </div>
                             ))}
