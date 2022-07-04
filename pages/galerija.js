@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import Image from 'next/image';
 import Stat from "./components/Stat";
 import galery1 from '../public/assets/galery1.jpg';
@@ -54,11 +55,24 @@ const galerija = [
 ]
 
 export default function Galery() {
+  const [showModal, setShowModal] = useState(false);
+  const [zoomedImage, setZoomedImage] = useState("");
+  const openModalAndSetIndex = (index) => {
+    setZoomedImage(galerija[index].imageSrc)
+    setShowModal(true);
+
+    return;
+  };
+  const closeModal = () => {
+    setZoomedImage("");
+    setShowModal(false);
+    return;
+  };
     return (
       <div className="bg-white">
         <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
           <div className="mb-24 grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8">
-            {galerija.map((product) => (
+            {galerija.map((product, index) => (
               <div key={product.id} className="group">
                 <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
                   <Image
@@ -67,11 +81,37 @@ export default function Galery() {
                     priority
                     placeholder="blur"
                     className="w-full h-full object-center object-cover group-hover:opacity-75"
+                    onClick={() => openModalAndSetIndex(index)}
                   />
                 </div>
               </div>
             ))}
           </div>
+          {showModal === true && (
+        <div
+          className="justify-center items-center flex overflow-x-hidden bg-black bg-opacity-80 overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+          onClick={closeModal}
+        >
+          <div className="relative w-auto my-6 mx-auto max-w-3xl">
+            <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+
+            </div>
+            <span className="bg-transparent text-gray-700 opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+              ×
+            </span>
+            <Image
+              src={zoomedImage}
+              alt="picture"
+              priority
+              width="800px"
+              height="600px"
+              className='rounded-lg'
+            />
+
+          </div>
+        </div>
+
+      )}
           <Stat/>
         </div>
       </div>

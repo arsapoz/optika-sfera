@@ -39,7 +39,7 @@ export default function Category() {
   return (
     <div className="bg-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-2xl container relative mx-auto py-16 sm:py-24 lg:py-24 lg:max-w-none">
+        <div className="max-w-2xl container mx-auto py-16 sm:py-24 lg:py-24 lg:max-w-none">
           <div className="text-center">
           <h1 className="lg:text-5xl md:text-4xl text-2xl font-bold leading-10 text-gray-800">Proizvodi</h1>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
