@@ -39,7 +39,7 @@ export default function Footer() {
                                 </a>
                             </Link>
                             
-                            <Link href="#!">
+                            <Link href="mailto:optikasfera@hotmail.com">
                                 <a className='mr-6 text-gray-300'>
                                     <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google"
                                         className="w-3.5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
@@ -76,6 +76,8 @@ export default function Footer() {
                             </svg>
                             Bežanijska 45, 11080 Zemun, Beograd,Srbija
                         </p>
+                        
+                        <Link href="mailto:optikasfera@hotmail.com">
                         <p className="flex items-center justify-center md:justify-start mb-4 text-base font-medium">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope"
                                 className="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -86,6 +88,7 @@ export default function Footer() {
                             </svg>
                             optikasfera@hotmail.com
                         </p>
+                        </Link>
                         <p className="flex items-center justify-center md:justify-start mb-4 text-base font-medium">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone"
                                 className="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg"
