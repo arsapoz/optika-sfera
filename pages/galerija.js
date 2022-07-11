@@ -73,17 +73,15 @@ export default function Galery() {
         <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
           <div className="mb-24 grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8">
             {galerija.map((product, index) => (
-              <div key={product.id} className="group">
-                <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+              <div key={product.id} className="group">        
                   <Image
                     src={product.imageSrc}
                     alt={product.imageAlt}
                     priority
                     placeholder="blur"
-                    className="w-full h-full object-center object-cover group-hover:opacity-75"
+                    className="w-full h-full object-center object-cover group-hover:opacity-75 rounded-lg"
                     onClick={() => openModalAndSetIndex(index)}
                   />
-                </div>
               </div>
             ))}
           </div>
